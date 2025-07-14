@@ -4,8 +4,8 @@ jobs:
   job1:
     ## 运行环境
     runs-on: ubuntu-latest
-    container:
-      image: node:8
+    ##container:
+    ##  image: node:8
     ## 运行步骤
     steps:
     ## 下载github仓库的执行流程。 actions-用户， checkout-仓库
