@@ -1,14 +1,16 @@
 name: CI
 on: [push]
 jobs:
-  build:
+  job1:
+    ## 运行环境
     runs-on: ubuntu-latest
-
+    container:
+      image: node:8
+    ## 运行步骤
     steps:
+    ## 下载github仓库的执行流程。 actions-用户， checkout-仓库
+    ## uses语法 {owner}/{repo}@{ref}
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, World!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    ## 运行shell指令
+    - run: echo hello
+    - run: node -v
