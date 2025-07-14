@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v1
     ## 运行shell指令
     - run: echo hello
-    - run: node -v
+      run: node -v
