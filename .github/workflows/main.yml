@@ -4,8 +4,6 @@ jobs:
   job1:
     ## 运行环境
     runs-on: ubuntu-latest
-    container:
-      image: node:8
     services:
       nginx:
         image: nginx
